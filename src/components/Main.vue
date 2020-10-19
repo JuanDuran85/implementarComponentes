@@ -19,12 +19,12 @@ export default {
         return {
            /*  url: 'https://picsum.photos/id/237/200/300'  */  
            dataVarios: [
-                {urlImg: 'https://picsum.photos/id/237/200/300', id: '1', texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', enlace: 'https://es.wikipedia.org/wiki/Portal:Perros'},
-                {urlImg: 'https://picsum.photos/seed/picsum/200/300', id: '2', texto: 'Illo commodi modi ullam mollitia sapiente provident debitis consequatur quasi nesciunt voluptatibus.', enlace: 'https://es.wikipedia.org/wiki/Monta%C3%B1a'},
-                {urlImg: 'https://picsum.photos/id/237/200/300', id: '3', texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', enlace: 'https://es.wikipedia.org/wiki/Portal:Perros'},
-                {urlImg: 'https://picsum.photos/seed/picsum/200/300', id: '4', texto: 'Illo commodi modi ullam mollitia sapiente provident debitis consequatur quasi nesciunt voluptatibus.', enlace: 'https://es.wikipedia.org/wiki/Monta%C3%B1a'},
-                {urlImg: 'https://picsum.photos/id/237/200/300', id: '5', texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', enlace: 'https://es.wikipedia.org/wiki/Portal:Perros'},
-                {urlImg: 'https://picsum.photos/seed/picsum/200/300', id: '6', texto: 'Illo commodi modi ullam mollitia sapiente provident debitis consequatur quasi nesciunt voluptatibus.', enlace: 'https://es.wikipedia.org/wiki/Monta%C3%B1a'}
+                {urlImg: 'https://picsum.photos/id/237/200/300', id: '1', texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', enlace: 'https://es.wikipedia.org/wiki/Portal:Perros', titulo: "Tarjeta numero 1"},
+                {urlImg: 'https://picsum.photos/seed/picsum/200/300', id: '2', texto: 'Illo commodi modi ullam mollitia sapiente provident debitis consequatur quasi nesciunt voluptatibus.', enlace: 'https://es.wikipedia.org/wiki/Monta%C3%B1a', titulo: "Tarjeta numero 2"},
+                {urlImg: 'https://picsum.photos/id/237/200/300', id: '3', texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', enlace: 'https://es.wikipedia.org/wiki/Portal:Perros', titulo: "Tarjeta numero 3"},
+                {urlImg: 'https://picsum.photos/seed/picsum/200/300', id: '4', texto: 'Illo commodi modi ullam mollitia sapiente provident debitis consequatur quasi nesciunt voluptatibus.', enlace: 'https://es.wikipedia.org/wiki/Monta%C3%B1a', titulo: "Tarjeta numero 4"},
+                {urlImg: 'https://picsum.photos/id/237/200/300', id: '5', texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', enlace: 'https://es.wikipedia.org/wiki/Portal:Perros', titulo: "Tarjeta numero 5"},
+                {urlImg: 'https://picsum.photos/seed/picsum/200/300', id: '6', texto: 'Illo commodi modi ullam mollitia sapiente provident debitis consequatur quasi nesciunt voluptatibus.', enlace: 'https://es.wikipedia.org/wiki/Monta%C3%B1a', titulo: "Tarjeta numero 6"}
            ]   
         }
     },
