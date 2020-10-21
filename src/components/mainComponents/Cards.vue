@@ -1,63 +1,13 @@
 <template>
   <div class="container">
       <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <div v-for="item in dataCards" :key="item.id" class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
             <div class="card">
-                <img :src="urlImg" class="card-img-top" alt="img1">
+                <img :src="item.urlImg" class="card-img-top" :alt="item.titulo">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card">
-                <img :src="urlImg" class="card-img-top" alt="img1">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card">
-                <img :src="urlImg" class="card-img-top" alt="img1">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card">
-                <img :src="urlImg" class="card-img-top" alt="img1">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card">
-                <img :src="urlImg" class="card-img-top" alt="img1">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="card">
-                <img :src="urlImg" class="card-img-top" alt="img1">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title" v-text="item.titulo"></h5>
+                    <p class="card-text" v-text="item.texto"></p>
+                    <a :href="item.enlace" target="_blank" class="btn btn-primary" @click="visita">Ir al Sitio</a>
                 </div>
             </div>
           </div>
@@ -68,6 +18,11 @@
 <script>
 export default {
     name: 'Cards',
+    data() {
+        return {
+            contador: 0
+        }
+    },
     props: {
 /*         urlImg: {
             type: String,
@@ -77,6 +32,12 @@ export default {
         dataCards: {
             type: Array,
             required: true
+        }
+    },
+    methods: {
+        visita(){
+            this.contador++;
+            this.$emit('contaVisita',this.contador);
         }
     }
 }
